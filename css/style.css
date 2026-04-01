@@ -1,0 +1,208 @@
+/*
+    Final Corrected CSS v2 - With Header Navigation Fix
+*/
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General Body Styles - Dark Theme */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #141414;
+    color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #E5B873; /* Cinematic gold for links */
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Main Container */
+.wrap {
+    width: 85%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background: #1c1c1c;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
+    border-radius: 8px;
+}
+
+/* ====================================================== */
+/* HEADER AND NAVIGATION - UPDATED SECTION */
+/* ====================================================== */
+.header {
+    background: #181818;
+    border-bottom: 1px solid #333;
+}
+.header-top .wrap {
+    /* Use Flexbox for easy alignment */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    margin: 0 auto;
+    background: none;
+    box-shadow: none;
+}
+.h-logo {
+    flex-shrink: 0; /* Prevents logo from shrinking */
+}
+.nav-wrap ul {
+    /* This makes the menu horizontal */
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Adds equal space between menu items */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-wrap ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.nav-wrap ul li a:hover {
+    background-color: #E5B873;
+    color: #111;
+}
+/* ====================================================== */
+/* END OF UPDATED SECTION */
+/* ====================================================== */
+
+/* Search Bar Block */
+.block {
+    background: #222;
+    padding: 20px 0;
+}
+#reservation-form input[type="text"] {
+    background: #333;
+    border: 1px solid #555;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+#reservation-form input[type="submit"] {
+    background: #E5B873;
+    color: #111;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#reservation-form input[type="submit"]:hover {
+    background: #fff;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Main Content Area */
+.content {
+    padding: 20px 0;
+}
+.content-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.listview_1_of_3 {
+    flex-basis: 32%;
+    display: flex;
+    flex-direction: column;
+}
+.listview_1_of_3 h3 {
+    color: #E5B873;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Upcoming Movies Item Style */
+.content-left {
+    display: flex;
+    margin-bottom: 25px;
+    background: #222;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 15px;
+    gap: 15px;
+}
+.listimg {
+    flex-basis: 40%;
+    flex-shrink: 0;
+}
+.text.list_1_of_2 {
+    flex-basis: 60%;
+}
+.extra-wrap .data strong {
+    color: #fff;
+    font-size: 1.2em;
+}
+.text-top {
+    font-size: 0.9em;
+    color: #aaa;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Trending Trailers Item Style */
+.middle-list .listimg1 {
+    margin-bottom: 15px;
+    background: #222;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+.middle-list .listimg1:hover {
+    transform: scale(1.03);
+}
+.middle-list .link {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+/* Films in Theaters Item Style */
+.listview_1_of_3 .text.list_1_of_2 {
+    padding: 0;
+}
+.listview_1_of_3 .content-left:hover {
+    background: #333;
+}
+
+/* Footer Styles */
+.footer {
+    background: #181818;
+    color: #aaa;
+    padding: 20px 0;
+    border-top: 1px solid #333;
+}
+.footer-bottom {
+    background: #000;
+}
